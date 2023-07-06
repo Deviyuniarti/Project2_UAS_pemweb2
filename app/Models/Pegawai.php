@@ -8,4 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Pegawai extends Model
 {
     use HasFactory;
-}
+
+    protected $table = "pegawais";
+
+    protected $filelable = [
+        'nama',
+        'nip',
+        'posisi_pekerjaan',
+        'kontak',
+        'alamat',
+    ];
+};

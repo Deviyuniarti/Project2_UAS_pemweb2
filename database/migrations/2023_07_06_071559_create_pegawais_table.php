@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('pegawais', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('nip');
+            $table->integer('posisi_pekerjaan_id');
+            $table->string('kontak');
+            $table->text('alamat');
             $table->timestamps();
         });
     }

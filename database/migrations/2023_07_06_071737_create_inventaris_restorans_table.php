@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('inventaris_restorans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('kode');
+            $table->integer('jumlah_barang');
             $table->timestamps();
         });
     }

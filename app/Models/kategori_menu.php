@@ -5,7 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Posisi extends Model
+class kategori_menu extends Model
 {
     use HasFactory;
-}
+
+    protected $table = "kategori_menus";
+
+    protected $filelable = [
+        'nama_kategori',
+    ];
+};

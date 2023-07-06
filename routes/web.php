@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/welcomes', function () {
     return view('Selamat datang di laravel');
 });
-// Route::get('/menu', [menuController::class, 'index']);
 
-Route::get('/menu', function () {
-    return view('template.index');
-});
+Route::get('/menu', [MenuController::class, 'index']);
+Route::get('/menu/create', [MenuController::class, 'create']);
+Route::post('/menu/simpan-data', [MenuController::class, 'store']);
