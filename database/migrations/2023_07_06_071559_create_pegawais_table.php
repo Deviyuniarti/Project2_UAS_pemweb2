@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('nip');
             $table->integer('posisi_pekerjaan_id');
             $table->string('kontak');
-            $table->text('alamat');
             $table->timestamps();
         });
     }

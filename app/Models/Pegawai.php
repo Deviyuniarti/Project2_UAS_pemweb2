@@ -14,8 +14,9 @@ class Pegawai extends Model
     protected $filelable = [
         'nama',
         'nip',
-        'posisi_pekerjaan',
+        'posisi_pekerjaan_id',
         'kontak',
         'alamat',
     ];
+
 };

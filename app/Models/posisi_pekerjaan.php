@@ -14,4 +14,5 @@ class posisi_pekerjaan extends Model
     protected $filelable = [
         'nama_posisi',
     ];
+    
 };

@@ -2,14 +2,14 @@
 
 @section('content')
     <div class="container-fluid px-2" style="color: black">
-        <h2 class="mt-2">Menu</h2>
+        <h2 class="mt-2">Posisi Pekerjaan</h2>
         <div class="d-flex justify-content-between mb-1">
-            <ol class="breadcrumb" style="color: blue; border: none; padding: 7px; width: 110px; height: 40px; font-size: 14px; cursor: pointer; display: flex; justify-content: center; align-items: center;">
-                <li class="breadcrumb-item">Data Menu</a></li>
-            </ol>         
-            <a href="/menu/create" class="btn btn-primary"
+            <ol class="breadcrumb" style="color: blue; border: none; padding: 7px; width: 150px; height: 40px; font-size: 14px; cursor: pointer; display: flex; justify-content: center; align-items: center;">
+                <li class="breadcrumb-item">Posisi pekerjaan</a></li>
+            </ol>            
+            <a href="/posisi_pekerjaan/create" class="btn btn-primary"
             style="background: linear-gradient(to right, #8E24AA, #42A5F5); color: #fff; border: none; padding: 7px 15px; width: auto; height: 40px; font-size: 14px; cursor: pointer; display: flex; justify-content: center; align-items: center;">
-                <i class="fas fa-plus"> Tambah Menu</i>
+                <i class="fas fa-plus"> Tambah Posisi Pekerjaan</i>
             </a>
         </div>
         <div class="card shadow">
@@ -19,31 +19,25 @@
                         <thead>
                             <tr style="color: black">
                                 <th>No</th>
-                                <th>Menu</th>
-                                <th>Harga</th>
-                                <th>Kontak</th>
-                                <th>Kategori Nama ID</th>
+                                <th>Nama Posisi Pekerjaan</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($menuData as $menu)
+                            @foreach ($dataposisi as $nama_posisi)
                                 <tr style="color: black">
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $menu->nama_menu }}</td>
-                                    <td>{{ $menu->harga }}</td>
-                                    <td>{{ $menu->kontak }}</td>
-                                    <td>{{ $menu->kategori_menu_id }}</td>
+                                    <td>{{ $nama_posisi->nama_posisi }}</td>
                                     <td>
-                                        <a href="/menu/view/{{ $menu->id }}" class="btn btn-primary"><i
+                                        <a href="/posisi_pekerjaan/view/{{ $nama_posisi->id }}" class="btn btn-primary"><i
                                             class="fas fa-eye"></i> View</a>
-                                        <a href="/menu/edit/{{ $menu->id }}" class="btn btn-warning"><i
+                                        <a href="/posisi_pekerjaan/edit/{{ $nama_posisi->id }}" class="btn btn-warning"><i
                                                 class="fas fa-edit"></i> Edit</a>
-                                        <a href="/menu/delete/{{ $menu->id }}" class="btn btn-danger"
-                                            onclick="event.preventDefault(); if(confirm('Apakah Anda yakin ingin menghapus data ini?')) { document.getElementById('delete-form-{{ $menu->id }}').submit(); }"><i
+                                        <a href="/posisi_pekerjaan/delete/{{ $nama_posisi->id }}" class="btn btn-danger"
+                                            onclick="event.preventDefault(); if(confirm('Apakah Anda yakin ingin menghapus data ini?')) { document.getElementById('delete-form-{{ $nama_posisi->id }}').submit(); }"><i
                                                 class="fas fa-trash"></i> Hapus</a>
-                                        <form id="delete-form-{{ $menu->id }}"
-                                            action="/menu/delete/{{ $menu->id }}" method="POST"
+                                        <form id="delete-form-{{ $nama_posisi->id }}"
+                                            action="/posisi_pekerjaan/delete/{{ $nama_posisi->id }}" method="POST"
                                             style="display: none;">
                                             @csrf
                                             @method('DELETE')
