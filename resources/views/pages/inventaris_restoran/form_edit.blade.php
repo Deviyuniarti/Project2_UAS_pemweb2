@@ -7,7 +7,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active">Edit Menu</li>
             </ol>
-            <a href="/inventaris_restoran" class="btn btn-warning">
+            <a href="/inventaris_restoran" class="btn btn-warning btn-sm" style="height: 40px;">
                 <i class="fas fa-arrow-left"></i> Kembali
             </a>
         </div>

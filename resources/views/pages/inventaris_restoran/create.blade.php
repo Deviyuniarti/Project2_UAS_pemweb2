@@ -7,7 +7,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active">Tambah Inventaris</li>
             </ol>
-            <a href="/inventaris_restoran" class="btn btn-warning btn-sm" style="height: 40px;"">
+            <a href="/inventaris_restoran" class="btn btn-warning btn-sm" style="height: 40px;">
                 <i class="fas fa-arrow-left"></i> Kembali
               </a>
         </div>

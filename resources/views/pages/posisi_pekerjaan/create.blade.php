@@ -7,7 +7,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item active">Tambah Posisi Pekerjaan</li>
             </ol>
-            <a href="/posisi_pekerjaan" class="btn btn-warning btn-sm" style="height: 40px;"">
+            <a href="/posisi_pekerjaan" class="btn btn-warning btn-sm" style="height: 40px;">
                 <i class="fas fa-arrow-left"></i> Kembali
               </a>
         </div>
