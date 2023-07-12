@@ -20,7 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
 Route::get('/menu', [MenuController::class, 'index']);
 Route::get('/menu/create', [MenuController::class, 'create']);
 Route::post('/menu/simpan-data', [MenuController::class, 'store']);
@@ -68,3 +67,9 @@ Route::get('/user/view/{id}', [userController::class, 'view']);
 Route::get('/user/edit/{id}', [userController::class, 'formEdit']);
 Route::post('/user/update/{id}', [userController::class, 'update']);
 Route::delete('/user/delete/{id}', [userController::class, 'delete'])->name('user.delete');
+
+
+
+
+
+
