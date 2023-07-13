@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class LoginController extends Controller
 {
@@ -13,32 +14,29 @@ class LoginController extends Controller
         return view('pages.auth.login');
     }
 
-    // Memproses login
     public function login(Request $request)
     {
-        // Memvalidasi inputan dari form
-        $input = $request->validate([
+        $credentials = $request->validate([
             'email' => 'required',
             'password' => 'required',
         ]);
 
-        // Mengecek data inputan dengan data di database, jika cocok login
-        if (Auth::attempt($input)) {
-            // Mengalihkan ke halaman selanjutnya
+        // $credentials = $request->only([
+        //     'email','password'
+        // ]);
+
+        if (Auth::attempt($credentials)) {
             return redirect('/menu');
         } else {
-            // Balik ke halaman login karena gagal
-            return redirect()->back();
+            return redirect()->back()->with('error', 'Invalid credentials. Please try again.');
         }
     }
 
     public function logout(Request $request)
     {
         Auth::logout();
-
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        
         return redirect('/login');
     }
 }

@@ -21,14 +21,14 @@
     <link href="{{ asset('template') }}/css/sb-admin-2.min.css" rel="stylesheet">
 
     <style>
-        body{
-             background: linear-gradient(to bottom right, #a8c0ff, #3f2b96);
-         }
-     </style>
+        body {
+            background: linear-gradient(to bottom right, #a8c0ff, #3f2b96);
+        }
+    </style>
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-primary">
 
     <div class="container">
 
@@ -45,43 +45,32 @@
                             <div class="card-body">
                                 <form action="/register/proses" method="POST">
                                     @csrf
-                                    <form class="user">
-                                        <div class="form-group row">
-                                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                                <input type="text" class="form-control form-control-user"
-                                                    id="FirstName" placeholder="First Name">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" class="form-control form-control-user"
-                                                    id="LastName" placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="InputEmail"
-                                                placeholder="Email Address">
-                                        </div>
-                                        <div class="form-group row">
-                                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                                <input type="password" class="form-control form-control-user"
-                                                    id="InputPassword" placeholder="Password">
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="password" class="form-control form-control-user"
-                                                    id="RepeatPassword" placeholder="Repeat Password">
-                                            </div>
-                                        </div>
-                                    </form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form-control-user" id="name"
+                                            name="name" placeholder="name">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-user" id="InputEmail"
+                                            name="email" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group ">
+                                            <input type="password" class="form-control form-control-user"
+                                                id="InputPassword" name="password" placeholder="Password">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
+                                    <hr>
+                                </form>
                             </div>
-                            <a href="/login" class="btn btn-primary btn-user btn-block">
-                                Register Account
-                            </a>
-                            <hr>
+                           
                             <a href="/login" class="btn btn-google btn-user btn-block">
                                 <i class="fab fa-google fa-fw"></i> Register with Google
                             </a>
                             <a href="/login" class="btn btn-facebook btn-user btn-block">
                                 <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
                             </a>
+
+
                             </form>
                             <hr>
                             <div class="text-center">

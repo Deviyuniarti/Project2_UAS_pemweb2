@@ -6,6 +6,7 @@ use App\Http\Controllers\{MenuController,};
 use App\Models\kategori_menu;
 use App\Models\Pegawai;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\landingpageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,23 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::middleware(['auth'])->group(function () {
 
     Route::get('/menu', [MenuController::class, 'index']);
     Route::get('/menu/create', [MenuController::class, 'create']);
@@ -65,9 +83,10 @@ use Illuminate\Support\Facades\Route;
     Route::get('/user/edit/{id}', [userController::class, 'formEdit']);
     Route::post('/user/update/{id}', [userController::class, 'update']);
     Route::delete('/user/delete/{id}', [userController::class, 'delete'])->name('user.delete');
-
     Route::get('/logout', [Auth\LoginController::class, 'logout']);
-    Route::get('/login', [Auth\LoginController::class, 'index'])->name('login');
-    Route::post('/login/proses', [Auth\LoginController::class, 'login']);
-    Route::get('/register', [Auth\RegisterController::class, 'index']);
-    Route::post('/register/proses', [Auth\RegisterController::class, 'register']);
+});
+
+Route::get('/login', [Auth\LoginController::class, 'index'])->name('login');
+Route::post('/login/proses', [Auth\LoginController::class, 'login']);
+Route::get('/register', [Auth\RegisterController::class, 'index']);
+Route::post('/register/proses', [Auth\RegisterController::class, 'register']);

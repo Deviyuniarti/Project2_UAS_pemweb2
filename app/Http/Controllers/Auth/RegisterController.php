@@ -4,11 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\User; // Import model User
+use App\Models\User;
 
 class RegisterController extends Controller
 {
-    // Memanggil halaman register
     public function index()
     {
         return view('pages.auth.register');
@@ -16,23 +15,20 @@ class RegisterController extends Controller
 
     public function register(Request $request)
     {
-        // Validasi input
-        $validatedUser = $request->validate([
+        $validatedData = $request->validate([
+            
             'name' => 'required',
-            'email' => 'required|unique:users', 
-            'contact' => 'required',
+            'email' => 'required|unique:users',
             'password' => 'required',
         ]);
 
-        // Simpan ke database
-        $userData = new User;
-        $userData->name = $request->name;
-        $userData->email = $request->email;
-        $userData->contact = $request->contact;
-        $userData->password = bcrypt($request->password); // Menggunakan fungsi bcrypt untuk mengenkripsi password
-        $userData->save();
+        // Simpan data ke database
+        $user = new User;
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->password = bcrypt($request->input('password'));
+        $user->save();
 
-        // Redirect
-        return redirect('/login')->with('success', 'Berhasil register');
+        return redirect('/login')->with('success', 'Registrasi berhasil!');
     }
 }
