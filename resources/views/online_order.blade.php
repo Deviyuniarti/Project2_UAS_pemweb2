@@ -93,8 +93,9 @@
     </style>
 </head>
 
-<body>
-    <div class="container">
+
+<body style="background-color: #252568;">
+    <div class="container" class="container-xxl bg-white p-0">
         <h1>Online Order</h1>
         <form id="order-form" method="POST" action="place_order.php">
             <div class="form-group">
@@ -139,9 +140,9 @@
         <div id="success-message" class="success-message" style="display: none;">Order placed successfully!</div>
         <div id="error-message" class="error-message" style="display: none;">Failed to place order. Please try again later.</div>
     </div>
-    <div class="footer">
-        <a href="/service">Kembali ke Service
-
+    <div class="footer" style="background-color: rgba(26, 26, 120, 0.8); color: white;">
+        <a href="/service" style="color: white;">Kembali ke Service</a>
+    </div>    
     <script>
         const form = document.getElementById('order-form');
         const successMessage = document.getElementById('success-message');

@@ -64,8 +64,8 @@
     </style>
 </head>
 
-<body class="bg-secondary">
-    <div class="container">
+<body style="background-color: #252568;">
+    <div class="container" class="container-xxl bg-white p-0">
         <div class="row justify-content-center mt-5">
             <div class="col-lg-4">
                 <div class="row">
