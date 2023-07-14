@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Http\Controllers\{MenuController};
 use App\Models\kategori_menu;
 use App\Models\Pegawai;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\landingpageController;
+use App\Http\Controllers\homeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,6 @@ use App\Http\Controllers\landingpageController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
 
 
 
@@ -76,12 +76,11 @@ Route::middleware(['auth'])->group(function() {
 
 });
 
-
-
 Route::get('/login', [Auth\LoginController::class, 'index'])->name('login');
 Route::post('/login/proses', [Auth\LoginController::class, 'login']);
 Route::get('/register', [Auth\RegisterController::class, 'index']);
 Route::post('/register/proses', [Auth\RegisterController::class, 'register']);
+
 
 
 Route::get('/', [homeController::class, 'index']);
@@ -92,3 +91,5 @@ Route::get('/varianmenu', [varianmenuController::class, 'index']);
 Route::get('/booking', [bookingController::class, 'index']);
 Route::get('/testimonial', [testimonialController::class, 'index']);
 Route::get('/contact', [contactController::class, 'index']);
+Route::get('/master_chefs', [master_chefsController::class, 'index']);
+Route::get('/online_order', [online_orderController::class, 'index']);
