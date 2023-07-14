@@ -1,0 +1,26 @@
+        .card-register {
+            border-radius: 20px;
+        }
+        
+        .card-register .card-body {
+            background-color: #f8f9fc;
+        }
+        
+        .card-register .form-control {
+            border-radius: 30px;
+        }
+        
+        .card-register .btn-primary {
+            background-color: #3f2b96;
+            border-color: #3f2b96;
+        }
+        
+        .card-register .btn-primary:hover {
+            background-color: #311d7a;
+            border-color: #311d7a;
+        }
+        
+        .card-register .btn-google,
+        .card-register .btn-facebook {
+            color: #ffffff;
+        }

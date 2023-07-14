@@ -11279,3 +11279,28 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+
+.card-login {
+  border-radius: 20px;
+}
+.card-login .card-header {
+  background-color: #ffffff;
+  border-bottom: none;
+}
+.card-login .card-body {
+  background-color: #f8f9fc;
+}
+.card-login .btn-primary {
+  background-color: #3f2b96;
+  border-color: #3f2b96;
+}
+.card-login .btn-primary:hover {
+  background-color: #311d7a;
+  border-color: #311d7a;
+}
+.card-login .btn-google,
+.card-login .btn-facebook {
+  color: #ffffff;
+}
+

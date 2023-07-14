@@ -11,13 +11,13 @@
 
     <title>SB Admin 2 - Register</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="{{ asset('template') }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom styles for this template -->
     <link href="{{ asset('template') }}/css/sb-admin-2.min.css" rel="stylesheet">
 
     <style>
@@ -31,12 +31,12 @@
 <body class="bg-primary">
 
     <div class="container">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
+         <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 col-md-10">
+        <div class="card o-hidden border-0 shadow-lg my-5 card-register">
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
-                <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
@@ -47,37 +47,32 @@
                                     @csrf
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" id="name"
-                                            name="name" placeholder="name">
-
+                                            name="name" placeholder="Name">
                                     </div>
                                     <div class="form-group">
                                         <input type="email" class="form-control form-control-user" id="InputEmail"
                                             name="email" placeholder="Email Address">
                                     </div>
-                                    <div class="form-group ">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="InputPassword" name="password" placeholder="Password">
+                                    <div class="form-group">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="InputPassword" name="password" placeholder="Password">
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-user btn-block">Register Account</button>
                                     <hr>
                                 </form>
-                            </div>
-                           
-                            <a href="/login" class="btn btn-google btn-user btn-block">
-                                <i class="fab fa-google fa-fw"></i> Register with Google
-                            </a>
-                            <a href="/login" class="btn btn-facebook btn-user btn-block">
-                                <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                            </a>
-
-
-                            </form>
-                            <hr>
-                            <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="small" href="/login">Already have an account? Login!</a>
+                                <a href="/login" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="/login" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                </div>
+                                <div class="text-center">
+                                    <a class="small" href="/login">Already have an account? Login!</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,14 +82,14 @@
 
     </div>
 
-    <!-- Bootstrap core JavaScript-->
+    <!-- Bootstrap core JavaScript -->
     <script src="{{ asset('template') }}/vendor/jquery/jquery.min.js"></script>
     <script src="{{ asset('template') }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
+    <!-- Core plugin JavaScript -->
     <script src="{{ asset('template') }}/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
+    <!-- Custom scripts for all pages -->
     <script src="{{ asset('template') }}/js/sb-admin-2.min.js"></script>
 
 </body>

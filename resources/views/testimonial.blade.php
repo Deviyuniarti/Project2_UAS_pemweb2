@@ -55,153 +55,102 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="main.html" class="nav-item nav-link active">Home</a>
-                        <a href="main.html" class="nav-item nav-link">About</a>
-                        <a href="main.html" class="nav-item nav-link">Service</a>
-                        <a href="main.html" class="nav-item nav-link">Menu</a>
+                        <a href="/home" class="nav-item nav-link active">Home</a>
+                        <a href="/about" class="nav-item nav-link">About</a>
+                        <a href="/service" class="nav-item nav-link">Service</a>
+                        <a href="/varianmenu" class="nav-item nav-link">Menu</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="/booking" class="dropdown-item">Booking</a>
+                                <a href="/testimonial" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">MASUK</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="/login" class="dropdown-item">Login</a>
+                            <a href="/register" class="dropdown-item">Register</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
-                            </div>
-                            <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpeg">
-                            </div>
-                            <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpeg">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Rumah Makan Padang</h1>
-                        <p class="mb-4">Padang, Sumatera Barat, memiliki kekayaan kuliner yang luar biasa. Bahkan kehadiran kuliner khas Padang ini sudah berada di seluruh nusantara dari sabang hingga merauke.
-
-                            Kekhasan dari masakan padang yang cukup kuat pada bumbu rempahnya yang membuat masakan khas Padang banyak disukai dan dicari oleh masyarakat luas.</p>
-                        <p class="mb-4">Bumbunya yang kuat membuat masakan padang memiliki rasa khas yang unik.
-
-                            Selain itu biasanya proses memasaknya yang masih menggunakan tungku tradisional membuat rasa dan aroma masakan khas Padang menjadi lebih nikmat.</p>
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Years of</p>
-                                        <h6 class="text-uppercase mb-0">Experience</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
-                                    <div class="ps-4">
-                                        <p class="mb-0">Popular</p>
-                                        <h6 class="text-uppercase mb-0">Master Chefs</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-                    </div>
+                <div class="text-center">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+                    <h1 class="mb-5">Our Clients Say!!!</h1>
                 </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Team Start -->
-        <div class="container-xxl pt-5 pb-3">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Menu Favorite</h5>
-                    <h1 class="mb-5">Masakan Padang</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/kalio ayam.jpeg" alt="">
-                            </div>
-                            <h5 class="mb-0">Kalio Ayam Padang</h5>
-                            <small>Kalio adalah sebutan masakan khas Padang yang kuahnya kental, di tengah-tengah antara gulai dan rendang. Bumbu kalio lebih kurang mirip dengan gulai tetapi durasi masak lebih lama jadi rasanya lebih meresap. Selain itu, kuah kalio ayam yang kental cocok makan bareng ketupat atau lontong.</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fas fa-shopping-cart"></i></a>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Rendangnya sangat enak dan rasanya kaya akan rempah</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.png" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Dina</h5>
+                                <small>Pelanggan</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/Rendang Sapi.jpeg" alt="">
-                            </div>
-                            <h5 class="mb-0">Rendang Sapi</h5>
-                            <small>Rendang adalah hidangan berbahan daging sapi yang proses memasaknya dengan suhu rendah dalam waktu lama dengan menggunakan aneka rempah-rempah dan santan.
-                                Kelembutan daging dan bumbu yang gurih membuat lidah penikmatnya akan ketagihan ingin menikmatinya lagi.</small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fas fa-shopping-cart"></i></a>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Masakan khas padang ini sangat enak enak</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Dino</h5>
+                                <small>Pelanggan</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/Gulai Ikan Kakap.jpeg
-                                " alt="">
-                            </div>
-                            <h5 class="mb-0">Dendeng</h5>
-                            <small>Dendeng biasanya juga dibuat dari daging sapi, sama seperti rendang namun tekstur dagingnya lebih keras dendeng.
-                                Dendeng dibuat dengan cara menjemur daging sapi kering.
-                                Namun sebelumnya daging sapi yang digunakan sebelum dijemur sudah diberi bumbu berupa rempah-rempah yang akan membuat daging sapi menjadi lebih awet.
-                            </small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fas fa-shopping-cart"></i></a>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Rasa dendengnya sangat enak sekali</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.png" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Alia</h5>
+                                <small>Pelanggan</small>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item text-center rounded overflow-hidden">
-                            <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="img/Gulai Nangka Padang.jpeg" alt="">
-                            </div>
-                            <h5 class="mb-0">Gulai Nangka Padang</h5>
-                            <small>Gulai cubadak atau lebih dikenal dengan nama gulai nangka padang adalah salah satu sayur pendamping makan.
-                                Daging nangka muda biasa diolah menjadi aneka masakan seperti rendang dan gulai. 
-                                Gulai nangka ini terbuat dari daging nangka yang masih muda dan dimasak dengan santan dan rempah rempah.
-                            </small>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a class="btn btn-square btn-primary mx-1" href=""><i class="fas fa-shopping-cart"></i></a>
+                    <div class="testimonial-item bg-transparent border rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Saya sering makan diresto ini karena pelayanannya yang sangat baik</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Rio</h5>
+                                <small>Pelanggan</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
+        <!-- Testimonial End -->
         
 
         <!-- Footer Start -->
