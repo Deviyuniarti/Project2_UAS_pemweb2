@@ -86,10 +86,11 @@
             text-align: center;
             margin-top: 20px;
         }
+
         .footer {
-        text-align: center;
-        margin-top: 20px;
-    }
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -97,7 +98,8 @@
 <body style="background-color: #252568;">
     <div class="container" class="container-xxl bg-white p-0">
         <h1>Online Order</h1>
-        <form id="order-form" method="POST" action="place_order.php">
+        <form action="{{ route('pesanan.store') }}" method="POST">
+            @csrf
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -138,11 +140,12 @@
             </div>
         </form>
         <div id="success-message" class="success-message" style="display: none;">Order placed successfully!</div>
-        <div id="error-message" class="error-message" style="display: none;">Failed to place order. Please try again later.</div>
+        <div id="error-message" class="error-message" style="display: none;">Failed to place order. Please try again
+            later.</div>
     </div>
     <div class="footer" style="background-color: rgba(26, 26, 120, 0.8); color: white;">
-        <a href="/service" style="color: white;">Kembali ke Service</a>
-    </div>    
+        <a href="/service" style="color: white;">Kembali ke Service</a><br>
+    </div>
     <script>
         const form = document.getElementById('order-form');
         const successMessage = document.getElementById('success-message');

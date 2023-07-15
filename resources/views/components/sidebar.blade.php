@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-utensils"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">RM.Padang</div>
+        <div class="sidebar-brand-text mx-3">Padang Store</div>
     </a>
 
     <!-- Divider -->
@@ -60,7 +60,13 @@
         </a>
 
     </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/pesanan">
+            <i class="fa fa-3x fa-cart-plus"></i>
+            <span>Daftar Pesanan</span>
+        </a>
 
+    </li>
 
 
 
