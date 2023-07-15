@@ -21,11 +21,8 @@
     <li class="nav-item ">
         <a class="nav-link" href="/kategori_menu">
             <i class="fas fa-tags"></i>
-            <span>Kategori Menu</span></a>
-
-    </li>
-
-
+            <span>kategori Menu</span>
+        </a>
     <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link" href="/pegawai">

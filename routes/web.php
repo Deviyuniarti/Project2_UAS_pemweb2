@@ -82,7 +82,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/login', [Auth\LoginController::class, 'index'])->name('login');
-Route::post('/login/proses', [Auth\LoginController::class, 'login']);
+Route::post('/login/proses', [Auth\LoginController::class, 'login'])->name('login.proses');
 Route::get('/register', [Auth\RegisterController::class, 'index']);
 Route::post('/register/proses', [Auth\RegisterController::class, 'register']);
 
